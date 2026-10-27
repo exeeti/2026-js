@@ -1,0 +1,14 @@
+td {
+  width: 40px;
+  height: 40px;
+  border: solid 1px #000;
+}
+
+td.marked {
+  background-color: black;
+}
+
+.clock {
+  display: flex;
+  gap: 10px;
+}
