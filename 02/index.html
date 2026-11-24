@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Часы</title>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+  <form id="clock-controls">
+    <select id="region" aria-label="Город">
+    <option value="Europe/Kaliningrad">Калининград</option>
+    <option value="Europe/Moscow">Москва</option>
+    <option value="Europe/Samara">Самара</option>
+    <option value="Asia/Yekaterinburg">Екатеринбург</option>
+    <option value="Asia/Omsk">Омск</option>
+    <option value="Asia/Krasnoyarsk">Красноярск</option>
+    <option value="Asia/Irkutsk">Иркутск</option>
+    <option value="Asia/Yakutsk">Якутск</option>
+    <option value="Asia/Vladivostok">Владивосток</option>
+    <option value="Asia/Magadan">Магадан</option>
+    <option value="Asia/Kamchatka">Камчатка</option>
+  </select>
+    <button id="add-clock" type="submit" aria-label="Добавить часы">+</button>
+  </form>
+
+  <main id="clocks"></main>
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+  margin: 12px;
+  background: #fff;
+  color: #222;
+}
+
+details {
+  margin-block: 20px;
+}
+
+summary {
+  width: fit-content;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.clock-row {
+  display: flex;
+  align-items: stretch;
+  gap: clamp(6px, 1.5vw, 20px);
+  margin-top: 16px;
+}
+
+.clock {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: clamp(4px, 2vw, 30px);
+  width: min(100%, 1100px);
+}
+
+.digit {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(1px, 0.28vw, 4px);
+}
+
+.digit span {
+  aspect-ratio: 1;
+}
+
+.digit .marked {
+  background: #858585;
+}
+
+.remove-clock {
+  min-width: 24px;
+  cursor: pointer;
+}
