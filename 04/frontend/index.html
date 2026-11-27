@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задачи</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <h1>Задачи</h1>
+        <p class="subtitle">Список дел через fetch</p>
+      </header>
+
+      <form class="add-form" id="add-form">
+        <input
+          type="text"
+          id="title-input"
+          name="title"
+          placeholder="Новая задача"
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Добавить</button>
+      </form>
+
+      <p class="status" id="status" hidden></p>
+
+      <ul class="task-list" id="task-list"></ul>
+    </main>
+
+    <template id="task-template">
+      <li class="task">
+        <input
+          type="checkbox"
+          class="task-check"
+          aria-label="Выполнено"
+        />
+        <span class="task-title"></span>
+        <button type="button" class="task-delete">Удалить</button>
+      </li>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
